@@ -46,7 +46,7 @@ PREBUILT_DIR="$MY_DIR/prebuilt"
 PARSEAPK="$MY_DIR/tools/get_latest_apkname.py"
 
 CURLARGS=" -L $CURLDNS"
-CURL="$MY_DIR/tools/curl_x64_static $CURLARGS"
+CURL="/usr/bin/curl $CURLARGS"
 source $MY_DIR/tools/extract_utils.sh
 
 if [ -d "$PREBUILT_DIR" ]; then
