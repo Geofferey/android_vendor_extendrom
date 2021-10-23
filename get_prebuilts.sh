@@ -240,7 +240,7 @@ if [ "$EXTENDROM_PREROOT_BOOT" == "true" ];then
     cp $MAGISKOUT/src/lib/armeabi-v7a/libmagiskinit.so $MAGISKOUT/magiskinit
     cp $MAGISKOUT/src/lib/armeabi-v7a/libmagisk32.so $MAGISKOUT/magisk32
     cp $MAGISKOUT/src/lib/armeabi-v7a/libmagisk64.so $MAGISKOUT/magisk64
-    cp $MY_DIR/root/* $MAGISKOUT/
+    cp -R $MY_DIR/root/* $MAGISKOUT/
 fi
 
 echo "- writing makefile"
