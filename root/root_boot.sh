@@ -143,6 +143,7 @@ $IS64BIT && SKIP64="" || SKIP64="#"
 "add 0644 overlay.d/init.bst.rc overlay/init.bst.rc" \
 "add 0750 overlay.d/sbin/bst.sh overlay/sbin/bst.sh" \
 "add 0750 overlay.d/sbin/setup.sh overlay/sbin/setup.sh" \
+"add 0750 overlay.d/sbin/busybox overlay/sbin/busybox" \
 "patch" \
 "backup ramdisk.cpio.orig" \
 "mkdir 000 .backup" \

@@ -10,12 +10,8 @@
 # Allowing us to drop static scripts into rom, again
 
 until [ -d /data/adb/service.d ]; do
-	sleep 0.5
+	sleep 1
 done
-
-#if [ ! -e /data/adb/magisk/magiskinit ]; then
-#	/system/xbin/tar xpvzf/system/etc/restore/setup.tar.gz -C /data/adb
-#fi
 
 if [ ! -e /data/adb/service.d/sysinit.sh ]; then
 	echo "#!/system/bin/sh" > /data/adb/service.d/sysinit.sh
